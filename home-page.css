@@ -1,0 +1,116 @@
+
+@font-face{
+    src: url(fonts/BonaNovaSC-Regular.ttf);
+    font-family: "Bona Nova SC";
+    
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+}
+header{
+    background-image: url('art/dancing-couple.jpg');
+    background-size: cover;  /* Ensure the image covers the entire header */
+    background-position: 50% 39%; /* Center the background image */;
+    overflow: hidden;
+    padding: 50px;
+}
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 29%;
+    background-color: rgba(0, 0, 0, 0.6); /* Black with 50% opacity */
+    z-index: 1; /* Layer the dimming effect behind the content */
+}
+.header-content{
+    position: relative;
+    color:rgb(180, 167, 52);
+    text-align: center;
+    z-index: 2;
+}
+
+.navbar{
+    text-align: center;
+    padding: 10px;
+    display:block;
+    background-color: rgba(189, 189, 50, 0.727);
+    height: 40px;
+
+}
+
+#navpage{
+    font-family: "lucida console", "courier new";
+    
+    text-decoration: none;
+    font-style: normal;
+    color: rgb(3, 52, 52);
+}
+
+aside{
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color:rgb(63, 68, 79);
+    width: 25%;
+    float: left;
+    padding: 20px;
+    
+    
+}
+#aside-avatar-border{
+    margin-left: 24px;
+    margin-top: 18px;
+    background-image: url("art/avatar.png");
+    background-size: cover;
+    background-position: 50% 79%;
+    width: 50%;
+    height: 175px;
+    border: 5px;
+    border-radius: 3cm;
+    align-items: center;
+}
+
+   
+
+article{
+    width: 75%;
+    float: left;
+    padding: 20px;
+}
+.fixed-size-image:active{
+    animation-name: grow;
+    animation-duration: 3s;
+
+}
+@keyframes grow{
+    50%{transform: scale(1.5,1.5);}
+}
+.image-container{
+    margin: 5px;
+    padding: 5px;
+    width:250px;
+}
+
+footer{
+    font-family: "Edu AU VIC WA NT Hand", "lucida console", "courier new";
+    display:block;
+    clear: both;
+    background-color: rgb(18, 23, 25);
+    color:rgb(5, 55, 55);
+    text-align: center;
+    
+}
+@media screen and (max-width:600px){
+    aside, section, article{
+        width: 100%;
+    }
+    h2{
+        text-align: center;
+    }
+}
