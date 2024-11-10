@@ -35,20 +35,21 @@ header::before {
 }
 
 .navbar{
-    text-align: center;
-    padding: 10px;
-    display:block;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
     background-color: rgba(189, 189, 50, 0.727);
-    height: 40px;
+    height: 50px;
 
 }
 
 #navpage{
+    padding: 20px;
     font-family: "lucida console", "courier new";
-    
     text-decoration: none;
     font-style: normal;
     color: rgb(3, 52, 52);
+    text-align: center;
 }
 
 aside{
